@@ -18,3 +18,4 @@ Start a WSGI container
 docker run -v {/path/to/my/app.wsgi}:/var/www/app.wsgi -p {port}:80 optibrium/wsgi
 ```
 
+You can include custom Apache config (.conf) in the /etc/apache2/custom directory. This is designed for CORS headers
