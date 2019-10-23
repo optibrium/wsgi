@@ -4,6 +4,7 @@ A simple Python Web Server Gateway Interface lifter
 ## Supported Tags and respective `Dockerfile` links
 * [latest](https://github.com/optibrium/wsgi)
 * [1](https://github.com/optibrium/wsgi/releases/tag/v1.1.2), [1.1](https://github.com/optibrium/wsgi/releases/tag/v1.1.2), [1.1.2](https://github.com/optibrium/wsgi/releases/tag/v1.1.2)
+* [2](https://github.com/optibrium/wsgi/releases/tag/v2.0.0), [2.0](https://github.com/optibrium/wsgi/releases/tag/v2.0.0), [2.0.0](https://github.com/optibrium/wsgi/releases/tag/v2.0.0)
 
 ## How to use this image
 Create an app.wsgi / app.py file that exposes the name  _application_
