@@ -7,7 +7,7 @@ RUN apt update \
     && pip3 install mod_wsgi mod-wsgi-httpd \
     && echo "LoadModule wsgi_module /usr/local/lib/python3.8/site-packages/mod_wsgi/server/mod_wsgi-py38.cpython-38-x86_64-linux-gnu.so" > /etc/apache2/mods-available/mod_wsgi.load \
     && a2enmod mod_wsgi\
-    && a2enmod proxy rewrite\
+    && a2enmod proxy proxy_http rewrite\
     && rm /var/www/* -rf
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
