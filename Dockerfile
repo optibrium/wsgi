@@ -9,7 +9,7 @@ RUN apt update \
     && a2enmod mod_wsgi\
     && a2enmod proxy proxy_http rewrite\
     && rm /var/www/* -rf\
-    && echo -e '#!/bin/bash\n\n/usr/sbin/apache2ctl -D FOREGROUND' > /usr/bin/wsgi\
+    && echo '#!/bin/bash\n\n/usr/sbin/apache2ctl -D FOREGROUND' > /usr/bin/wsgi\
     && chmod +x /usr/bin/wsgi
 
 CMD ["/usr/bin/wsgi"]
